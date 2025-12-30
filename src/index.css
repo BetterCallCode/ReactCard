@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+input {
+  margin: 8px;
+  padding: 10px 16px;
+  background-color: rgb(61, 61, 61);
+  width: 35%;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+input:hover {
+  border: 2px solid white;
+}
+
+.submit {
+  padding: 10px 16px;
+  width: 35%;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: coral;
+  border: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.submit:hover {
+  background-color: rgb(234, 108, 62);
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+.hero-card {
+  width: 100%;
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards {
+  height: 280px;
+  width: 240px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+  border: 2px solid rgb(159, 159, 159);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cards img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px dashed rgb(159, 159, 159);
+}
+
+.remove {
+  position: absolute;
+  right: 5%;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.cards h2{
+  font-size: 30px;
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.cards p{
+  text-transform: capitalize;
+  font-weight: 300;
+  color: rgb(173, 173, 173);
+  font-size: 16px;
+}
+
+.follow {
+  padding: 10px 20px;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+}
+
+.follow:hover {
+  background-color: rgb(42, 79, 190);
+}
+
+.follow:active {
+  transform: scale(0.95);
+}
